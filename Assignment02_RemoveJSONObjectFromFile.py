@@ -25,8 +25,7 @@ def remove_data(data,del_element):
                 #Ignore single elements which will come as String.
                 #Check if the element a dict. If yes, store it in new variable and make a recursive call to the method'''
                 if isinstance(data.get(key),dict):
-                    newData=data.get(key)
-                    print("recursive call @29")
+                    newData=data.get(key)                    
                     remove_data(newData, del_element)
                 # Else check if it is a list. If yes, store the data is new variable and 
                 # iterate to find the element that needs to be deleted                
